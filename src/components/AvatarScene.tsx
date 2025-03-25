@@ -2,12 +2,13 @@
 
 import { useRef, useState, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
+import * as THREE from "three";
 import { useGLTF, OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { motion } from "framer-motion";
 
-// Simplified avatar model component
 function AvatarModel({ ...props }) {
-  const group = useRef();
+  const group = useRef<THREE.Group>(null);
+
 
   // Simple animation for our avatar
   useFrame((state) => {
@@ -62,7 +63,7 @@ function AvatarModel({ ...props }) {
 }
 
 function FloatingGlow() {
-  const ref = useRef();
+  const ref = useRef<THREE.Mesh>(null);
 
   useFrame((state) => {
     if (ref.current) {
