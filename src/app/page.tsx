@@ -266,63 +266,54 @@ export default function Home() {
             icon={<FaHtml5 />}
             name="HTML5"
             level={90}
-            color="#E34F26"
             index={0}
           />
           <ModernSkillCard
             icon={<FaCss3Alt />}
             name="CSS3"
             level={85}
-            color="#1572B6"
             index={1}
           />
           <ModernSkillCard
             icon={<SiJavascript />}
             name="JavaScript"
             level={80}
-            color="#F7DF1E"
             index={2}
           />
           <ModernSkillCard
             icon={<FaReact />}
             name="React"
             level={75}
-            color="#61DAFB"
             index={3}
           />
           <ModernSkillCard
             icon={<FaPython />}
             name="Python"
             level={85}
-            color="#3776AB"
             index={4}
           />
           <ModernSkillCard
             icon={<FaNodeJs />}
             name="Node.js"
             level={70}
-            color="#339933"
             index={5}
           />
           <ModernSkillCard
             icon={<SiSolidity />}
             name="Solidity"
             level={65}
-            color="#363636"
             index={6}
           />
           <ModernSkillCard
             icon={<FaEthereum />}
             name="Ethereum"
             level={60}
-            color="#3C3C3D"
             index={7}
           />
           <ModernSkillCard
             icon={<SiTypescript />}
             name="TypeScript"
             level={70}
-            color="#3178C6"
             index={8}
           />
         </div>
