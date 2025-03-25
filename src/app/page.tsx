@@ -12,6 +12,7 @@ import ModernEducationCard from "@/components/ModernEducationCard";
 import ModernContactForm from "@/components/ModernContactForm";
 import Navbar from "@/components/Navbar";
 
+
 // Icons for skills
 import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaPython, FaEthereum } from "react-icons/fa";
 import { SiJavascript, SiSolidity, SiTypescript, SiTailwindcss } from "react-icons/si";
@@ -88,11 +89,13 @@ export default function Home() {
     },
   };
 
-  return (
+  return ( 
     <main className="min-h-screen flex flex-col">
+      
       <Navbar />
 
       {/* Hero Section */}
+     
       <Section
         id="home"
         fullHeight
@@ -101,6 +104,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-primary/5 to-transparent" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center z-10 relative">
+          
           <motion.div
             className="order-2 md:order-1"
             variants={containerVariants}
