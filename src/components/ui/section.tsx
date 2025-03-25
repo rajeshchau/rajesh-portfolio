@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, HTMLMotionProps } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-interface SectionProps extends React.HTMLAttributes<HTMLDivElement> {
+interface SectionProps extends Omit<HTMLMotionProps<"section">, "title"> {
   title?: string;
   subtitle?: string;
   children: React.ReactNode;
